@@ -3,8 +3,8 @@ import sys
 import argparse
 #import bluetooth
 
-from mindwave.bluetooth_headset import connect_magic, connect_bluetooth_addr
-from mindwave.bluetooth_headset import BluetoothError
+from mindwave3.bluetooth_headset import connect_magic, connect_bluetooth_addr
+from mindwave3.bluetooth_headset import BluetoothError
 
 def mindwave_startup(description="", extra_args=[]):
     parser = argparse.ArgumentParser(description=description)

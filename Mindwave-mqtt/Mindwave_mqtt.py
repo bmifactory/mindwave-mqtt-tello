@@ -15,9 +15,9 @@ This program is based on
 import pygame, random, sys, numpy
 from numpy import *
 from pygame import *
-from mindwave.parser import ThinkGearParser, TimeSeriesRecorder
+from mindwave3.parser import ThinkGearParser, TimeSeriesRecorder
 from startup_sub import *
-from tello import *
+#from tello import *
 import paho.mqtt.client as mqtt
 
 description = """Tello Neurosky
