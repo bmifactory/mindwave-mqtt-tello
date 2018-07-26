@@ -7,8 +7,8 @@ https://github.com/piconewton/mindwave-py3
 
 python setup.py install
 
-Install TelloPy-develop-0.5.0-python3_5
+Install TelloPy-develop-0.5.0
 
-https://github.com/hanyazou/TelloPy/tree/develop-0.5.0-python3_5
+https://github.com/hanyazou/TelloPy/tree/develop-0.5.0
 
 python setup.py install
