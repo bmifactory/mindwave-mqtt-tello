@@ -1,5 +1,5 @@
 '''
-Created on 2018. 6. 10.
+Created on 2018. 9. 10.
 @author: Kipom
 This program is based on
 '''
@@ -48,9 +48,9 @@ duration_level3 = 79
 
 # Set pygame parameter
 fullscreen = False
-bg_file = "KBRI_background_1360x768_start.jpg"
-bg_file_close = "KBRI_background_1360x768_start.jpg"
-bg_file_open = "KBRI_background_1360x768_open.jpg"
+bg_file = "Cerebro_1360x768_start.jpg"
+bg_file_close = "Cerebro_1360x768_start.jpg"
+bg_file_open = "Cerebro_1360x768_open.jpg"
 message_range = 20
 message_list = list(range(message_range))
 m_event = 0
@@ -287,7 +287,15 @@ def main():
                         #background_img = pygame.image.load(bg_file_close)
                     else:
                         control_mode = True
-                    background_img = pygame.image.load(bg_file_close)
+                        #background_img = pygame.image.load(bg_file_close)
+                elif event.key == K_SPACE:
+                    if takeoff_flag == True:
+                        takeoff_flag = False
+                        control_mode = False
+                        background_img = pygame.image.load(bg_file)
+                    else:
+                        takeoff_flag = True
+                        background_img = pygame.image.load(bg_file_close)
                 elif event.key == K_t:
                     mqtt_command = 'takeoff'
                     takeoff_flag = True

@@ -9,7 +9,7 @@ from mindwave3.bluetooth_headset import BluetoothError
 def mindwave_startup(description="", extra_args=[]):
     parser = argparse.ArgumentParser(description=description)
     parser.add_argument('address', type=str, nargs='?',
-            const=None, default='A0:E6:F8:F7:B7:78',
+            const=None, default='24:71:89:EC:57:ED',
             help="""Bluetooth Address of device. Use this
             if you have multiple headsets nearby or you want
             to save a few seconds during startup.""")
